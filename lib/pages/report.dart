@@ -77,7 +77,7 @@ class _ReportPageState extends State<ReportPage> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 DropdownButton<String>(
-                  dropdownColor: const Color.fromARGB(255, 219, 55, 55),
+                  dropdownColor: const Color.fromRGBO(255, 164, 153, 1.000),
                   hint: const Text("Company",
                       style: TextStyle(color: Colors.black)),
                   value: selectedCompany,
@@ -98,7 +98,7 @@ class _ReportPageState extends State<ReportPage> {
                 ),
                 const SizedBox(width: 10),
                 DropdownButton<String>(
-                  dropdownColor: const Color.fromARGB(255, 219, 55, 55),
+                  dropdownColor: const Color.fromRGBO(255, 164, 153, 1.000),
                   hint:
                       const Text("Year", style: TextStyle(color: Colors.black)),
                   value: selectedYear,
@@ -118,7 +118,7 @@ class _ReportPageState extends State<ReportPage> {
                 ),
                 const SizedBox(width: 10),
                 DropdownButton<String>(
-                  dropdownColor: const Color.fromARGB(255, 219, 55, 55),
+                  dropdownColor: const Color.fromRGBO(255, 164, 153, 1.000),
                   hint: const Text("Month",
                       style: TextStyle(color: Colors.black)),
                   value: selectedMonth,
@@ -193,7 +193,7 @@ class _ReportPageState extends State<ReportPage> {
                 topRight: Radius.circular(20),
               ),
               child: Container(
-                color: const Color.fromARGB(255, 255, 117, 90),
+                color: const Color.fromRGBO(255, 112, 95, 1.000),
                 child: Column(
                   children: [
                     Row(

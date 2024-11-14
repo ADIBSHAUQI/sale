@@ -12,8 +12,8 @@ class HomePage extends StatelessWidget {
         children: [
           // Filter section with year and month dropdowns
           Container(
-            color: const Color.fromARGB(
-                255, 122, 23, 23), // Set background color of the filter section
+            color: const Color.fromRGBO(106, 14, 3,
+                1.000), // Set background color of the filter section
             padding: const EdgeInsets.all(0.0),
             child: Row(
               mainAxisAlignment:
@@ -24,7 +24,7 @@ class HomePage extends StatelessWidget {
                   margin: const EdgeInsets.symmetric(
                       horizontal: 8.0), // Add spacing between dropdowns
                   child: DropdownButton<String>(
-                    dropdownColor: const Color.fromARGB(255, 219, 55, 55),
+                    dropdownColor: const Color.fromRGBO(255, 164, 153, 1.000),
                     hint: Text("Year",
                         style: TextStyle(
                             color: Colors.white)), // Change hint color
@@ -38,8 +38,8 @@ class HomePage extends StatelessWidget {
                         child: Text(
                           value,
                           style: TextStyle(
-                              color:
-                                  Colors.white), // Change dropdown option color
+                              color: Color.fromRGBO(140, 29, 16,
+                                  1.000)), // Change dropdown option color
                         ),
                       );
                     }).toList(),
@@ -50,7 +50,7 @@ class HomePage extends StatelessWidget {
                   margin: const EdgeInsets.symmetric(
                       horizontal: 5.0), // Add spacing between dropdowns
                   child: DropdownButton<String>(
-                    dropdownColor: const Color.fromARGB(255, 219, 55, 55),
+                    dropdownColor: const Color.fromRGBO(255, 164, 153, 1.000),
                     hint: Text("Month",
                         style: TextStyle(
                             color: Colors.white)), // Change hint color
@@ -76,8 +76,8 @@ class HomePage extends StatelessWidget {
                         child: Text(
                           value,
                           style: TextStyle(
-                              color:
-                                  Colors.white), // Change dropdown option color
+                              color: Color.fromRGBO(140, 29, 16,
+                                  1.000)), // Change dropdown option color
                         ),
                       );
                     }).toList(),
@@ -141,7 +141,7 @@ class HomePage extends StatelessWidget {
                 topRight: Radius.circular(20), // Rounded top-right corner
               ),
               child: Container(
-                color: const Color.fromARGB(255, 255, 117, 90),
+                color: const Color.fromRGBO(255, 112, 95, 1.000),
                 child: Column(
                   children: [
                     // Center the title and the total income amount

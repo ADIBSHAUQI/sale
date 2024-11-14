@@ -61,7 +61,7 @@ class _MainPageState extends State<MainPage> {
           style: TextStyle(color: Colors.white70, fontSize: 15),
         ),
         centerTitle: true,
-        backgroundColor: const Color.fromARGB(255, 122, 23, 23),
+        backgroundColor: const Color.fromRGBO(106, 14, 3, 1.000),
         actions: [
           IconButton(
             icon: const Icon(Icons.add),
