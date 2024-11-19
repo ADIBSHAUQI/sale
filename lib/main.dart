@@ -80,12 +80,16 @@ class _MainPageState extends State<MainPage> {
         ],
       ),
       body: SafeArea(
-        child: _pages[_selectedIndex],
+        child: AnimatedSwitcher(
+          duration: const Duration(milliseconds: 300),
+          child: _pages[_selectedIndex],
+        ),
       ),
       bottomNavigationBar: BottomNavigationBar(
+        backgroundColor: Color.fromRGBO(106, 14, 3, 1.000),
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
-            icon: Icon(Icons.edit_document),
+            icon: Icon(Icons.add_chart),
             label: 'Sales',
           ),
           BottomNavigationBarItem(
@@ -93,12 +97,12 @@ class _MainPageState extends State<MainPage> {
             label: 'Home',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.book_rounded),
+            icon: Icon(Icons.insert_chart),
             label: 'Sales Report',
           ),
         ],
         currentIndex: _selectedIndex,
-        selectedItemColor: Colors.amber[800],
+        selectedItemColor: const Color.fromARGB(255, 255, 179, 0),
         unselectedItemColor: Colors.grey,
         onTap: _onItemTapped,
       ),
