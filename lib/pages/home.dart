@@ -77,7 +77,7 @@ class _HomePageState extends State<HomePage> {
               children: [
                 // Year Dropdown
                 DropdownButton<String>(
-                  dropdownColor: const Color.fromRGBO(255, 164, 153, 1.000),
+                  dropdownColor: const Color.fromRGBO(255, 112, 95, 1.000),
                   value: selectedYear,
                   hint:
                       const Text("Year", style: TextStyle(color: Colors.white)),
@@ -94,13 +94,13 @@ class _HomePageState extends State<HomePage> {
                         child: Text(
                           value,
                           style: const TextStyle(
-                              color: Color.fromRGBO(140, 29, 16, 1.000)),
+                              color: Color.fromRGBO(248, 248, 248, 1)),
                         ));
                   }).toList(),
                 ),
                 // Month Dropdown
                 DropdownButton<String>(
-                  dropdownColor: const Color.fromRGBO(255, 164, 153, 1.000),
+                  dropdownColor: const Color.fromRGBO(255, 112, 95, 1.000),
                   value: selectedMonth,
                   hint: const Text("Month",
                       style: TextStyle(color: Colors.white)),
@@ -129,7 +129,7 @@ class _HomePageState extends State<HomePage> {
                         child: Text(
                           value,
                           style: const TextStyle(
-                              color: Color.fromRGBO(140, 29, 16, 1.000)),
+                              color: Color.fromRGBO(255, 255, 255, 1)),
                         ));
                   }).toList(),
                 ),
@@ -235,7 +235,8 @@ class _HomePageState extends State<HomePage> {
                                 LinearProgressIndicator(
                                   value: company['salesProgress'],
                                   backgroundColor: Colors.grey.shade200,
-                                  color: color, // Matching progress bar color
+                                  color: Colors
+                                      .yellow, // Matching progress bar color
                                   minHeight: 8,
                                 ),
                                 SizedBox(height: 8),
